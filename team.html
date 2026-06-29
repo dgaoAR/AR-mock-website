@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Team | Alloy River</title>
-<meta name="description" content="The builders, operators, and craftspeople behind Alloy River." />
+<meta name="description" content="The team behind Alloy River." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,20 +16,14 @@
 <section class="page-hero">
   <div class="wrap">
     <p class="eyebrow reveal">Our team</p>
-    <h1 class="reveal">The builders, operators, and craftspeople.</h1>
-    <p class="reveal">We're growing the team across San Francisco, Toronto, and Montréal.</p>
+    <h1 class="reveal">The team behind Alloy River.</h1>
+    <p class="reveal">We're a team across San Francisco, Toronto, and Montréal.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <div class="team-grid" id="teamGrid"></div>
-    <p style="color:var(--ink-faint);font-size:14px;margin-top:40px;max-width:60ch">
-      Placeholder team. To finalize: drop each photo into <code>assets/img/team/</code> and edit the
-      <code>TEAM</code> list near the bottom of this file,set each person's <code>name</code>,
-      <code>title</code>, <code>photo</code>, <code>bio</code>, and <code>li</code> (LinkedIn URL).
-      Cards with no photo show initials; empty <code>bio</code>/<code>li</code> are hidden.
-    </p>
   </div>
 </section>
 
@@ -51,7 +45,7 @@
 <script>
   // bio: one-line description ("" to hide).  li: LinkedIn URL ("" to hide).
   // NOTE: the founders' LinkedIn below points to the company page as a
-  // placeholder,replace each with the person's personal profile URL.
+  // placeholder, replace each with the person's personal profile URL.
   const TEAM = [
     {name:"Gui Laliberte", title:"CEO & Co-Founder", photo:"gui-laliberte.png", bio:"Leads the company and its partnerships.", li:"https://www.linkedin.com/company/alloyriver"},
     {name:"Jeremy Tupper", title:"CTO & Co-Founder", photo:"jeremy-tupper.jpg", bio:"Leads product and engineering.", li:"https://www.linkedin.com/company/alloyriver", zoom:1.5, bw:true, down:25},
@@ -83,8 +77,7 @@
       </div>
       <h3>${m.name}</h3>
       <div class="role-title">${m.title}</div>
-      ${m.bio?`<p class="bio">${m.bio}</p>`:""}
-      ${m.li?`<div class="links"><a href="${m.li}" target="_blank" rel="noopener">LinkedIn ↗</a></div>`:""}
+      ${m.li?`<div class="links"><a href="${m.li}" target="_blank" rel="noopener" aria-label="${m.name} on LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></div>`:""}
     </div>`).join("");
 </script>
 

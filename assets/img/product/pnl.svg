@@ -20,7 +20,7 @@
   <text x="260" y="64" fill="#1A1D21" font-size="30" font-weight="700">Profit &amp; Loss</text>
   <text x="260" y="92" fill="#8A877B" font-size="14">Accrual basis · Q2 2026</text>
   <rect x="980" y="44" width="180" height="34" rx="8" fill="#FFFCEA" stroke="#1A1D21" stroke-opacity="0.14"/>
-  <text x="1000" y="66" fill="#595C62" font-size="13" font-family="Geist Mono, monospace">Apr – Jun 2026 ▾</text>
+  <text x="1000" y="66" fill="#595C62" font-size="13" font-family="Geist Mono, monospace">Apr to Jun 2026 ▾</text>
   <!-- statement card -->
   <g transform="translate(260,128)">
     <rect width="900" height="536" rx="12" fill="#FFFFFF" stroke="#1A1D21" stroke-opacity="0.12"/>

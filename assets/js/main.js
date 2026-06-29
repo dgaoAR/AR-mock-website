@@ -1,5 +1,5 @@
 /* ============================================================
-   Alloy River,shared site script
+   Alloy River, shared site script
    Injects the header + footer on every page, handles nav state,
    scroll effects, reveal-on-scroll, and keyboard shortcuts.
    ============================================================ */
@@ -32,10 +32,12 @@ function buildHeader(){
   const el = document.createElement("header");
   el.className = "nav";
   el.innerHTML = `
-    <a class="brand" href="index.html" aria-label="Alloy River home">${LOGO}</a>
-    <nav class="nav-links">${links}</nav>
-    <a class="btn nav-cta" href="mailto:hi@alloyriver.com">Contact</a>
-    <button class="nav-toggle" aria-label="Open menu">&#9776;</button>`;
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Alloy River home">${LOGO}</a>
+      <nav class="nav-links">${links}</nav>
+      <a class="btn nav-cta" href="mailto:hi@alloyriver.com">Contact</a>
+      <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+    </div>`;
   document.body.prepend(el);
 
   // mobile menu
@@ -71,7 +73,6 @@ function buildFooter(){
     <div class="footer-grid">
       <div class="footer-brand">
         ${LOGO}
-        <p>A lasting home for finance firms: better software and shared operations, with the people who built them still in charge.</p>
       </div>
       <div class="footer-col">
         <h5>Explore</h5>
@@ -104,24 +105,8 @@ function initReveal(){
   document.querySelectorAll(".reveal").forEach((el,i)=>{el.style.transitionDelay=(i%4*60)+"ms";io.observe(el)});
 }
 
-/* ---------- Keyboard shortcuts (mirror the original site) ---------- */
-function initKeys(){
-  addEventListener("keydown",e=>{
-    if(/input|textarea/i.test(e.target.tagName)) return;
-    const k = e.key.toLowerCase();
-    if(k==="c"){navigator.clipboard?.writeText("hi@alloyriver.com"); toast("Email copied");}
-    if(k==="f"){location.href="mailto:hi@alloyriver.com";}
-  });
-}
-function toast(msg){
-  const t=document.createElement("div");t.textContent=msg;
-  t.style.cssText="position:fixed;bottom:28px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 20px;border-radius:999px;font-size:13px;font-weight:600;z-index:99;font-family:var(--mono)";
-  document.body.appendChild(t);setTimeout(()=>t.remove(),1600);
-}
-
 document.addEventListener("DOMContentLoaded",()=>{
   buildHeader();
   buildFooter();
   initReveal();
-  initKeys();
 });
