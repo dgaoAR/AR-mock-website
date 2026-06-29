@@ -1,0 +1,111 @@
+<svg viewBox="0 0 1200 740" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#156A46" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#156A46" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- canvas -->
+  <rect width="1200" height="740" fill="#F7F5EF"/>
+  <!-- sidebar -->
+  <rect width="220" height="740" fill="#1A1D21"/>
+  <g transform="translate(28,40)">
+    <polygon points="0,18 16,18 8,0" fill="#FFFCEA"/>
+    <text x="26" y="15" fill="#FFFCEA" font-size="15" font-weight="700">Alloy River</text>
+  </g>
+  <g font-size="14" fill="#8A877B">
+    <rect x="16" y="84" width="188" height="40" rx="9" fill="#156A46" fill-opacity="0.22"/>
+    <text x="32" y="109" fill="#F7F5EF" font-weight="600">Overview</text>
+    <text x="32" y="161">Cash flow</text>
+    <text x="32" y="205">Profit &amp; Loss</text>
+    <text x="32" y="249">Invoices</text>
+    <text x="32" y="293">Clients</text>
+    <text x="32" y="337">Reports</text>
+  </g>
+  <text x="32" y="700" fill="#595C62" font-size="12">Northwind Bookkeeping</text>
+  <!-- top bar -->
+  <text x="260" y="64" fill="#1A1D21" font-size="30" font-weight="700">Overview</text>
+  <text x="260" y="92" fill="#8A877B" font-size="14">Financial health · June 2026</text>
+  <rect x="980" y="44" width="180" height="34" rx="8" fill="#FFFCEA" stroke="#1A1D21" stroke-opacity="0.14"/>
+  <text x="1000" y="66" fill="#595C62" font-size="13" font-family="Geist Mono, monospace">Jan – Jun 2026 ▾</text>
+  <!-- KPI cards -->
+  <g>
+    <!-- card template repeated -->
+    <g transform="translate(260,128)">
+      <rect width="210" height="118" rx="12" fill="#FFFFFF" stroke="#1A1D21" stroke-opacity="0.12"/>
+      <text x="22" y="38" fill="#8A877B" font-size="12" font-family="Geist Mono, monospace" letter-spacing="1">REVENUE</text>
+      <text x="22" y="76" fill="#1A1D21" font-size="28" font-weight="700">$482K</text>
+      <text x="22" y="100" fill="#156A46" font-size="13">▲ 12% vs last qtr</text>
+    </g>
+    <g transform="translate(490,128)">
+      <rect width="210" height="118" rx="12" fill="#FFFFFF" stroke="#1A1D21" stroke-opacity="0.12"/>
+      <text x="22" y="38" fill="#8A877B" font-size="12" font-family="Geist Mono, monospace" letter-spacing="1">CASH ON HAND</text>
+      <text x="22" y="76" fill="#1A1D21" font-size="28" font-weight="700">$1.24M</text>
+      <text x="22" y="100" fill="#156A46" font-size="13">▲ 4% this month</text>
+    </g>
+    <g transform="translate(720,128)">
+      <rect width="210" height="118" rx="12" fill="#FFFFFF" stroke="#1A1D21" stroke-opacity="0.12"/>
+      <text x="22" y="38" fill="#8A877B" font-size="12" font-family="Geist Mono, monospace" letter-spacing="1">MONTHLY BURN</text>
+      <text x="22" y="76" fill="#1A1D21" font-size="28" font-weight="700">$96K</text>
+      <text x="22" y="100" fill="#8A877B" font-size="13">▼ 3% vs last month</text>
+    </g>
+    <g transform="translate(950,128)">
+      <rect width="210" height="118" rx="12" fill="#FFFFFF" stroke="#1A1D21" stroke-opacity="0.12"/>
+      <text x="22" y="38" fill="#8A877B" font-size="12" font-family="Geist Mono, monospace" letter-spacing="1">RUNWAY</text>
+      <text x="22" y="76" fill="#1A1D21" font-size="28" font-weight="700">12.9 mo</text>
+      <text x="22" y="100" fill="#156A46" font-size="13">Steady</text>
+    </g>
+  </g>
+  <!-- chart card -->
+  <g transform="translate(260,272)">
+    <rect width="580" height="392" rx="12" fill="#FFFFFF" stroke="#1A1D21" stroke-opacity="0.12"/>
+    <text x="26" y="44" fill="#1A1D21" font-size="17" font-weight="600">Cash position</text>
+    <text x="26" y="68" fill="#8A877B" font-size="12">Last 12 months</text>
+    <!-- gridlines -->
+    <g stroke="#1A1D21" stroke-opacity="0.07">
+      <line x1="26" y1="120" x2="554" y2="120"/>
+      <line x1="26" y1="200" x2="554" y2="200"/>
+      <line x1="26" y1="280" x2="554" y2="280"/>
+      <line x1="26" y1="340" x2="554" y2="340"/>
+    </g>
+    <!-- area + line -->
+    <path d="M26,300 L74,288 L122,296 L170,262 L218,250 L266,228 L314,236 L362,196 L410,180 L458,156 L506,150 L554,118 L554,340 L26,340 Z" fill="url(#area)"/>
+    <path d="M26,300 L74,288 L122,296 L170,262 L218,250 L266,228 L314,236 L362,196 L410,180 L458,156 L506,150 L554,118" fill="none" stroke="#156A46" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="554" cy="118" r="4.5" fill="#156A46"/>
+    <g fill="#8A877B" font-size="11" font-family="Geist Mono, monospace">
+      <text x="26" y="364">Jul</text><text x="170" y="364">Oct</text><text x="314" y="364">Jan</text><text x="458" y="364">Apr</text>
+    </g>
+  </g>
+  <!-- activity card -->
+  <g transform="translate(870,272)">
+    <rect width="290" height="392" rx="12" fill="#FFFFFF" stroke="#1A1D21" stroke-opacity="0.12"/>
+    <text x="24" y="44" fill="#1A1D21" font-size="17" font-weight="600">Recent activity</text>
+    <g font-size="13">
+      <g transform="translate(24,74)">
+        <circle cx="6" cy="6" r="5" fill="#156A46"/>
+        <text x="22" y="10" fill="#1A1D21">Invoice #2041 paid</text>
+        <text x="22" y="30" fill="#8A877B" font-size="11">Atlas Foods · $8,400</text>
+      </g>
+      <g transform="translate(24,134)">
+        <circle cx="6" cy="6" r="5" fill="#2E47A0"/>
+        <text x="22" y="10" fill="#1A1D21">May close completed</text>
+        <text x="22" y="30" fill="#8A877B" font-size="11">Reconciled · 2 days ago</text>
+      </g>
+      <g transform="translate(24,194)">
+        <circle cx="6" cy="6" r="5" fill="#156A46"/>
+        <text x="22" y="10" fill="#1A1D21">Payroll run scheduled</text>
+        <text x="22" y="30" fill="#8A877B" font-size="11">14 employees · Jun 30</text>
+      </g>
+      <g transform="translate(24,254)">
+        <circle cx="6" cy="6" r="5" fill="#2E47A0"/>
+        <text x="22" y="10" fill="#1A1D21">3 bills awaiting approval</text>
+        <text x="22" y="30" fill="#8A877B" font-size="11">$12,900 total</text>
+      </g>
+      <g transform="translate(24,314)">
+        <circle cx="6" cy="6" r="5" fill="#156A46"/>
+        <text x="22" y="10" fill="#1A1D21">New client onboarded</text>
+        <text x="22" y="30" fill="#8A877B" font-size="11">Beacon Health</text>
+      </g>
+    </g>
+  </g>
+</svg>

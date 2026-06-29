@@ -1,0 +1,96 @@
+<svg viewBox="0 0 1200 740" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <rect width="1200" height="740" fill="#F7F5EF"/>
+  <!-- sidebar -->
+  <rect width="220" height="740" fill="#1A1D21"/>
+  <g transform="translate(28,40)">
+    <polygon points="0,18 16,18 8,0" fill="#FFFCEA"/>
+    <text x="26" y="15" fill="#FFFCEA" font-size="15" font-weight="700">Alloy River</text>
+  </g>
+  <g font-size="14" fill="#8A877B">
+    <text x="32" y="109">Overview</text>
+    <text x="32" y="161">Cash flow</text>
+    <text x="32" y="205">Profit &amp; Loss</text>
+    <text x="32" y="249">Invoices</text>
+    <rect x="16" y="268" width="188" height="40" rx="9" fill="#156A46" fill-opacity="0.22"/>
+    <text x="32" y="293" fill="#F7F5EF" font-weight="600">Clients</text>
+    <text x="32" y="337">Reports</text>
+  </g>
+  <text x="32" y="700" fill="#595C62" font-size="12">Northwind Bookkeeping</text>
+  <!-- top -->
+  <text x="260" y="64" fill="#1A1D21" font-size="30" font-weight="700">Clients</text>
+  <text x="260" y="92" fill="#8A877B" font-size="14">28 active engagements</text>
+  <rect x="1020" y="44" width="140" height="34" rx="8" fill="#1A1D21"/>
+  <text x="1090" y="66" fill="#FFFCEA" font-size="13" text-anchor="middle" font-family="Geist Mono, monospace">+ Add client</text>
+  <!-- AR summary cards -->
+  <g>
+    <g transform="translate(260,120)">
+      <rect width="285" height="96" rx="12" fill="#FFFFFF" stroke="#1A1D21" stroke-opacity="0.12"/>
+      <text x="22" y="36" fill="#8A877B" font-size="12" font-family="Geist Mono, monospace">RECURRING REVENUE</text>
+      <text x="22" y="72" fill="#1A1D21" font-size="24" font-weight="700">$142K <tspan fill="#8A877B" font-size="13" font-weight="400">/ mo</tspan></text>
+    </g>
+    <g transform="translate(567,120)">
+      <rect width="285" height="96" rx="12" fill="#FFFFFF" stroke="#1A1D21" stroke-opacity="0.12"/>
+      <text x="22" y="36" fill="#8A877B" font-size="12" font-family="Geist Mono, monospace">OUTSTANDING (A/R)</text>
+      <text x="22" y="72" fill="#1A1D21" font-size="24" font-weight="700">$38,200</text>
+    </g>
+    <g transform="translate(874,120)">
+      <rect width="286" height="96" rx="12" fill="#FFFFFF" stroke="#1A1D21" stroke-opacity="0.12"/>
+      <text x="22" y="36" fill="#8A877B" font-size="12" font-family="Geist Mono, monospace">OVERDUE 30+ DAYS</text>
+      <text x="22" y="72" fill="#1A1D21" font-size="24" font-weight="700">$6,900</text>
+    </g>
+  </g>
+  <!-- table card -->
+  <g transform="translate(260,240)">
+    <rect width="900" height="424" rx="12" fill="#FFFFFF" stroke="#1A1D21" stroke-opacity="0.12"/>
+    <g font-family="Geist Mono, monospace" font-size="12" fill="#8A877B">
+      <text x="32" y="44">CLIENT</text>
+      <text x="430" y="44">PLAN</text>
+      <text x="640" y="44" text-anchor="end">MRR</text>
+      <text x="710" y="44">STATUS</text>
+      <text x="868" y="44" text-anchor="end">LAST CLOSE</text>
+    </g>
+    <line x1="32" y1="60" x2="868" y2="60" stroke="#1A1D21" stroke-opacity="0.12"/>
+    <g font-size="15" fill="#1A1D21">
+      <!-- row -->
+      <g transform="translate(0,96)">
+        <text x="32" y="0" font-weight="600">Atlas Foods</text>
+        <text x="430" y="0" fill="#595C62" font-size="14">Full-service</text>
+        <text x="640" y="0" text-anchor="end" font-family="Geist Mono, monospace">$6,800</text>
+        <rect x="710" y="-15" width="86" height="24" rx="12" fill="#156A46" fill-opacity="0.14"/><text x="753" y="2" text-anchor="middle" font-size="12" fill="#156A46">On track</text>
+        <text x="868" y="0" text-anchor="end" fill="#595C62" font-size="14" font-family="Geist Mono, monospace">Jun 4</text>
+      </g>
+      <line x1="32" y1="124" x2="868" y2="124" stroke="#1A1D21" stroke-opacity="0.06"/>
+      <g transform="translate(0,160)">
+        <text x="32" y="0" font-weight="600">Beacon Health</text>
+        <text x="430" y="0" fill="#595C62" font-size="14">Bookkeeping</text>
+        <text x="640" y="0" text-anchor="end" font-family="Geist Mono, monospace">$3,200</text>
+        <rect x="710" y="-15" width="86" height="24" rx="12" fill="#156A46" fill-opacity="0.14"/><text x="753" y="2" text-anchor="middle" font-size="12" fill="#156A46">On track</text>
+        <text x="868" y="0" text-anchor="end" fill="#595C62" font-size="14" font-family="Geist Mono, monospace">Jun 3</text>
+      </g>
+      <line x1="32" y1="188" x2="868" y2="188" stroke="#1A1D21" stroke-opacity="0.06"/>
+      <g transform="translate(0,224)">
+        <text x="32" y="0" font-weight="600">Cedar &amp; Co</text>
+        <text x="430" y="0" fill="#595C62" font-size="14">Full-service</text>
+        <text x="640" y="0" text-anchor="end" font-family="Geist Mono, monospace">$9,400</text>
+        <rect x="710" y="-15" width="78" height="24" rx="12" fill="#B8862F" fill-opacity="0.16"/><text x="749" y="2" text-anchor="middle" font-size="12" fill="#9A6F1E">Review</text>
+        <text x="868" y="0" text-anchor="end" fill="#595C62" font-size="14" font-family="Geist Mono, monospace">May 30</text>
+      </g>
+      <line x1="32" y1="252" x2="868" y2="252" stroke="#1A1D21" stroke-opacity="0.06"/>
+      <g transform="translate(0,288)">
+        <text x="32" y="0" font-weight="600">Lumen Labs</text>
+        <text x="430" y="0" fill="#595C62" font-size="14">Tax + advisory</text>
+        <text x="640" y="0" text-anchor="end" font-family="Geist Mono, monospace">$5,100</text>
+        <rect x="710" y="-15" width="86" height="24" rx="12" fill="#156A46" fill-opacity="0.14"/><text x="753" y="2" text-anchor="middle" font-size="12" fill="#156A46">On track</text>
+        <text x="868" y="0" text-anchor="end" fill="#595C62" font-size="14" font-family="Geist Mono, monospace">Jun 2</text>
+      </g>
+      <line x1="32" y1="316" x2="868" y2="316" stroke="#1A1D21" stroke-opacity="0.06"/>
+      <g transform="translate(0,352)">
+        <text x="32" y="0" font-weight="600">Vantage Retail</text>
+        <text x="430" y="0" fill="#595C62" font-size="14">Bookkeeping</text>
+        <text x="640" y="0" text-anchor="end" font-family="Geist Mono, monospace">$2,750</text>
+        <rect x="710" y="-15" width="86" height="24" rx="12" fill="#156A46" fill-opacity="0.14"/><text x="753" y="2" text-anchor="middle" font-size="12" fill="#156A46">On track</text>
+        <text x="868" y="0" text-anchor="end" fill="#595C62" font-size="14" font-family="Geist Mono, monospace">Jun 1</text>
+      </g>
+    </g>
+  </g>
+</svg>

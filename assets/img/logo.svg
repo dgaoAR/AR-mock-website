@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 150" role="img" aria-label="Alloy River">
+  <g fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter" transform="translate(10,12)">
+    <!-- A : solid triangle -->
+    <polygon points="0,120 86,120 43,18" fill="currentColor" stroke="none"/>
+    <!-- L -->
+    <path d="M110,18 V120 H168"/>
+    <!-- L -->
+    <path d="M192,18 V120 H250"/>
+    <!-- O -->
+    <circle cx="324" cy="70" r="50"/>
+    <!-- Y -->
+    <path d="M398,18 L438,66 M478,18 L438,66 M438,66 V120"/>
+    <!-- R -->
+    <path d="M548,18 V120 M548,18 H595 A24,24 0 0 1 595,66 H548 M576,66 L620,120"/>
+    <!-- I -->
+    <path d="M650,18 V120"/>
+    <!-- V -->
+    <path d="M680,18 L720,120 L760,18"/>
+    <!-- E (mirrored) -->
+    <path d="M842,18 H784 M842,18 V120 M842,120 H784 M842,69 H800"/>
+    <!-- R -->
+    <path d="M866,18 V120 M866,18 H913 A24,24 0 0 1 913,66 H866 M894,66 L938,120"/>
+  </g>
+</svg>
