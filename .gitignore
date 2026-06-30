@@ -5,3 +5,15 @@ desktop.ini
 *.swp
 .vscode/
 .idea/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+
+# Local env files
+.env
+.env.*
+!.env.example
